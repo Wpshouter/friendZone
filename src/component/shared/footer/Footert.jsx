@@ -23,10 +23,10 @@ const Footert = () => {
   </aside>
   <div className='container mx-auto'>  
        <div className="w-full h-px bg-white opacity-5"></div>
-        <div className='w-full flex justify-between'>
+        <div className='w-full block md:flex justify-between'>
               <p className='text-white opacity-80 '>Copyright © {new Date().getFullYear()} KeenKeeper. All right reserved</p>
               <nav>
-                <ul>
+                <ul className='flex gap-3 justify-center'>
                     <li className='text-white opacity-80'><a href="#">Privacy Policy</a></li>
                     <li className='text-white opacity-80'><a href="#">Terms of Service</a></li>
                     <li className='text-white opacity-80'><a href="#">Cookies</a></li>
