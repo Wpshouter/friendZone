@@ -71,7 +71,7 @@ theme: "dark",
     return (
         <div className='container mx-auto p-5'>
    
-     <div className="flex flex-col md:flex-row h-screen gap-10 my-20 items-stretch mb-100 md:mb-10">
+     <div className="flex flex-col md:flex-row  gap-10 my-20 items-stretch mb-100 md:mb-10">
       {/* Sidebar */}
       <aside className="w-full md:w-1/4">
         <SideBar friend={friend}/>

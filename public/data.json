@@ -94,5 +94,53 @@
     "bio": "Collaborated on a Wix project.",
     "goal": 14,
     "next_due_date": "2025-07-26"
+  },
+  {
+    "id": 9,
+    "name": "Fatima Noor",
+    "picture": "https://randomuser.me/api/portraits/women/44.jpg",
+    "email": "fatima.noor@example.com",
+    "days_since_contact": 12,
+    "status": "almost due",
+    "tags": ["community", "volunteer"],
+    "bio": "Met during a charity event in Khulna.",
+    "goal": 14,
+    "next_due_date": "2025-07-24"
+  },
+  {
+    "id": 10,
+    "name": "James O'Connor",
+    "picture": "https://randomuser.me/api/portraits/men/31.jpg",
+    "email": "james.oconnor@example.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["startup", "mentor"],
+    "bio": "Advisor from a SaaS accelerator program.",
+    "goal": 14,
+    "next_due_date": "2025-07-30"
+  },
+  {
+    "id": 11,
+    "name": "Nadia Hasan",
+    "picture": "https://randomuser.me/api/portraits/women/65.jpg",
+    "email": "nadia.hasan@example.com",
+    "days_since_contact": 16,
+    "status": "overdue",
+    "tags": ["family", "travel"],
+    "bio": "Cousin living abroad in Canada.",
+    "goal": 14,
+    "next_due_date": "2025-07-20"
+  },
+  {
+    "id": 12,
+    "name": "Victor Santos",
+    "picture": "https://randomuser.me/api/portraits/men/88.jpg",
+    "email": "victor.santos@example.com",
+    "days_since_contact": 9,
+    "status": "almost due",
+    "tags": ["design", "freelance"],
+    "bio": "Met through a Figma design community.",
+    "goal": 14,
+    "next_due_date": "2025-07-25"
   }
 ]

@@ -6,7 +6,7 @@ const FriendCard = ({ frineData }) => {
   console.log(friends, "friend from stats card");
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-5 items-stretch">
       {friends.map(friend => (
         // <div key={friend.id} className="p-4 border rounded shadow">
         //   <img
@@ -22,7 +22,7 @@ const FriendCard = ({ frineData }) => {
         //   </p>
         // </div>
           <Link key={friend.id} to={`/friend/${friend.id}`}>
-           <div  className='border border-gray-200 shadow-md py-10 PX-3 text-center bg-white cursor-pointer'>
+           <div  className='border border-gray-200 shadow-md py-10 PX-3 text-center bg-white cursor-pointer h-full'>
                   <p className=''><img src={friend.picture} alt={friend.name} className="max-w-[100px] mx-auto rounded-full mb-2" /></p>
                   <p className='text-gray-800 font-bold text-xl'>{friend.name}</p>
                   <p className='text-slate-600 my-2'>{friend.days_since_contact}d ago</p>
