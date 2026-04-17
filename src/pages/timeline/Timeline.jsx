@@ -20,15 +20,31 @@ const Timeline = () => {
             }
            
         }
+        const handle_searchType = (event) => {
+              const typed_text = event.target.value.toLowerCase();
+            console.log(typed_text);
+             const results = FriendContexthere.Activity.filter(
+                (activity) =>
+                  
+                activity.type.toLowerCase().includes(typed_text)||
+                activity.Friend.name.toLowerCase().includes(typed_text)
+            );
+            console.log(results, "rtesrer");
+            setfilterType(results);
+        }
     return (
         <div className='container mx-auto my-20 p-5'>
             <h2 className='text-gray-900 font-bold text-2xl'>Timeline</h2>
+            <div className='flex gap-10 items-center'>
             <select onChange={(e)=>handleFilterType(e)} defaultValue="Small" className="select select-md my-3 border-gray-200">
-            <option vlaue="">Filter Timeline</option>
+                <option vlaue="">Filter Timeline</option>
                 <option value="Call">Call</option>
                 <option value="Text" >Text</option>
                 <option value="Video" >Video</option>
             </select>
+            <input onInput={(e)=>handle_searchType(e)} type="text" placeholder="Search" className="input input-neutral border-gray-200" />
+            </div>
+           
             {
             filterType.map((Activity,inx) => 
                 (

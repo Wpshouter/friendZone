@@ -8,19 +8,7 @@ const FriendCard = ({ frineData }) => {
   return (
     <div className="grid grid-cols-2 md:grid-cols-4 gap-5 items-stretch">
       {friends.map(friend => (
-        // <div key={friend.id} className="p-4 border rounded shadow">
-        //   <img
-        //     src={friend.picture}
-        //     alt={friend.name}
-        //     className="w-16 h-16 rounded-full mb-2"
-        //   />
-        //   <h2 className="text-lg font-bold">{friend.name}</h2>
-        //   <p className="text-sm text-gray-600">{friend.email}</p>
-        //   <p className="mt-2">{friend.bio}</p>
-        //   <p className="text-xs text-gray-500">
-        //     Days since contact: {friend.days_since_contact} | Status: {friend.status}
-        //   </p>
-        // </div>
+
           <Link key={friend.id} to={`/friend/${friend.id}`}>
            <div  className='border border-gray-200 shadow-md py-10 PX-3 text-center bg-white cursor-pointer h-full'>
                   <p className=''><img src={friend.picture} alt={friend.name} className="max-w-[100px] mx-auto rounded-full mb-2" /></p>
