@@ -16,8 +16,12 @@ const StatsPage = ({frineData}) => {
 
     return (
         <div className='container mx-auto my-20 p-5'>
-             <h2 className='text-gray-900 font-bold text-2xl my-3'>Friendship Analytics</h2>
-            <PieChartCompo data={data}/>
+              {
+                (FriendContextHere.Activity.length < 1) ?  <div className='flex gap-4 items-center justify-center bg-white shadow-md rounded-md my-3 p-3 border border-gray-200'><p>No activity recorded yet</p></div> 
+                
+                : <div><h2 className='text-gray-900 font-bold text-2xl my-3'>Friendship Analytics</h2><PieChartCompo data={data}/></div>
+            }
+            
         </div>
     );
 };

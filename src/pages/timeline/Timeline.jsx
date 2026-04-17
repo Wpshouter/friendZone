@@ -44,7 +44,9 @@ const Timeline = () => {
             </select>
             <input onInput={(e)=>handle_searchType(e)} type="text" placeholder="Search" className="input input-neutral border-gray-200" />
             </div>
-           
+            {
+                (filterType.length < 1) ?  <div className='flex gap-4 items-center justify-center bg-white shadow-md rounded-md my-3 p-3 border border-gray-200'><p>No timeline recorded yet</p></div> : ''
+            }
             {
             filterType.map((Activity,inx) => 
                 (
