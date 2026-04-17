@@ -34,11 +34,11 @@ const FriendCard = ({ frineData }) => {
                   <br></br>
                   {
                     friend.status === 'overdue' ? (
-                       <div className="badge badge-error my-2">Overdue</div>
+                       <div className="badge badge-error my-2 text-white">Overdue</div>
                     ) : friend.status === 'on-track' ? (
-                         <div className="badge badge-primary my-2">On-Track</div>
+                         <div className="badge badge-primary my-2 text-white">On-Track</div>
                     ) : friend.status === 'almost due' ? (
-                          <div className="badge badge-warning my-2">Almost Due</div>
+                          <div className="badge badge-warning my-2 text-white">Almost Due</div>
                     ) : ''
                   }
 

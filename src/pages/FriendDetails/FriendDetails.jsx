@@ -3,9 +3,10 @@ import { FiArchive } from 'react-icons/fi';
 import { MdDeleteOutline, MdOutlineAddIcCall, MdOutlineNotificationsActive } from 'react-icons/md';
 import { useParams } from 'react-router';
 import SideBar from './component/sidebar';
-import { FaRegMessage } from 'react-icons/fa6';
+import { FaCheck, FaRegMessage } from 'react-icons/fa6';
 import { IoVideocamOutline } from 'react-icons/io5';
 import { FriendContext } from '../../context/FriendContext';
+import { toast } from 'react-toastify';
 
 
 const FriendDetails = ({frineData}) => {
@@ -48,6 +49,19 @@ const FriendDetails = ({frineData}) => {
         }
         //console.log(NewActivity);
          FriendContexthere.setActivity(prev => [...prev, NewActivity]);
+         toast( <div className="flex items-center gap-2">
+    <FaCheck className="text-primary text-xl" />
+    <span>{Type} With {friend.name}</span>
+  </div>, {
+position: "top-center",
+autoClose: 3500,
+hideProgressBar: false,
+closeOnClick: false,
+pauseOnHover: true,
+draggable: true,
+progress: undefined,
+theme: "dark",
+});
         //console.log(FriendContexthere.Activity, "FriendContexthere.Activity");
     }
     useEffect(() => {
@@ -57,7 +71,7 @@ const FriendDetails = ({frineData}) => {
     return (
         <div className='container mx-auto p-5'>
    
-     <div className="flex flex-col md:flex-row h-screen gap-10 my-20 items-stretch mb-100 md:mb-50">
+     <div className="flex flex-col md:flex-row h-screen gap-10 my-20 items-stretch mb-100 md:mb-10">
       {/* Sidebar */}
       <aside className="w-full md:w-1/4">
         <SideBar friend={friend}/>

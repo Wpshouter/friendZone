@@ -8,12 +8,7 @@ const SideBar = ({friend}) => {
             <p className=''><img src={friend.picture} alt={friend.name} className="max-w-[100px] mx-auto rounded-full mb-2" /></p>
                               <p className='text-gray-800 font-bold text-xl'>{friend.name}</p>
                               <p className='text-slate-600 my-2'>62d ago</p>
-                  {
-                    friend.tags.map((tag, indx) => (
-                      <div key={indx} className="badge badge-success mx-2">{tag}</div>
-                    ))
-                  }
-                  <br></br>
+                  
                   {
                     friend.status === 'overdue' ? (
                        <div className="badge badge-error my-2">Overdue</div>
@@ -22,6 +17,12 @@ const SideBar = ({friend}) => {
                     ) : friend.status === 'almost due' ? (
                           <div className="badge badge-warning my-2">Almost Due</div>
                     ) : ''
+                  }
+                  <br></br>
+                  {
+                    friend.tags.map((tag, indx) => (
+                      <div key={indx} className="badge badge-success mx-2">{tag}</div>
+                    ))
                   }
                   <p className='text-slate-500 text-md italic my-2'>"{friend.bio}"</p>
                   <p className='text-slate-500 text-md mb-3'>Preferred:Email</p>
