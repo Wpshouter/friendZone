@@ -71,7 +71,7 @@ theme: "dark",
     return (
         <div className='container mx-auto p-5'>
    
-     <div className="flex flex-col md:flex-row  gap-10 my-20 items-stretch mb-100 md:mb-10">
+     <div className="flex flex-col md:flex-row  gap-10 my-20 items-stretch">
       {/* Sidebar */}
       <aside className="w-full md:w-1/4">
         <SideBar friend={friend}/>
@@ -81,17 +81,17 @@ theme: "dark",
       {/* Main Content */}
       <main className="flex-1">
             <div className='grid grid-cols-3 gap-4 md:gap-10 mb-8'>
-                <div className='border border-gray-200 shadow-md px-3 py-10 PX-3 text-center bg-white rounded-xl'>
-                    <h3 className='text-3xl font-semibold text-emerald-900 mb-3'>{friend.days_since_contact}</h3>
-                    <p className='text-slate-500 text-xl'>Days Since Contact</p>
+                <div className='border border-gray-200 shadow-md px-1 md:px-3 py-10 text-center bg-white rounded-xl'>
+                    <h3 className=' text-2xl md:text-3xl font-semibold text-emerald-900 mb-3'>{friend.days_since_contact}</h3>
+                    <p className='text-slate-500 text-md md:text-xl'>Days Since Contact</p>
                 </div>
-                <div className='border border-gray-200 shadow-md px-3 py-10 PX-3 text-center bg-white rounded-xl'>
-                    <h3 className='text-3xl font-semibold text-emerald-900 mb-3'>{friend.goal}</h3>
-                    <p className='text-slate-500 text-xl'>Goals (Days)</p>
+                <div className='border border-gray-200 shadow-md px-1 md:px-3 py-10 text-center bg-white rounded-xl'>
+                    <h3 className='text-2xl md:text-3xl font-semibold text-emerald-900 mb-3'>{friend.goal}</h3>
+                    <p className='text-slate-500 text-md md:text-xl'>Goals (Days)</p>
                 </div>
-                <div className='border border-gray-200 shadow-md px-3 py-10 PX-3 text-center bg-white rounded-xl'>
-                    <h3 className='text-3xl font-semibold text-emerald-900 mb-3'>{formatted}</h3>
-                    <p className='text-slate-500 text-xl'>Next Due</p>
+                <div className='border border-gray-200 shadow-md px-1 md:px-3 py-10 text-center bg-white rounded-xl'>
+                    <h3 className='text-2xl md:text-3xl font-semibold text-emerald-900 mb-3'>{formatted}</h3>
+                    <p className='text-slate-500 text-md md:text-xl'>Next Due</p>
                 </div>
             </div>
             <div className='w-full border border-gray-200 shadow-md text-center bg-white rounded-xl mb-8'>

@@ -1,16 +1,15 @@
-# React + Vite
+### README
+NAME
+- FriendZone-Keep Track of Connections
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Description
+- This is an app to track friend communication data this is made to test react skills.
 
-Currently, two official plugins are available:
+Technology Used
+- React, React Router, Tailwind, DaisyUI, Rechart, React Icons
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Features
+- Shows friend details as card
+- Friend Deails Page have 3 button with functionality call text and video.
+- Timeline Page shows Entries. Can be filtered and search 
+- Shows a Pie Chart showing the interaction type
