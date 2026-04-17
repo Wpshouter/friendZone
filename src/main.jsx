@@ -6,6 +6,9 @@ import MainLayout from './layout/MainLayout.jsx'
 import Timeline from './pages/timeline/Timeline.jsx'
 import Home from './pages/homepage/Home.jsx'
 import FriendDetails from './pages/FriendDetails/FriendDetails.jsx'
+import FriendContextProvider from './context/FriendContext.jsx'
+import ScrollToTop from './component/shared/ScroolToTop/ScroolToTop.jsx'
+import StatsPage from './pages/Stats/StatsPage.jsx'
 
 const frineData = fetch('/data.json').then( res => res.json());
 
@@ -23,8 +26,12 @@ const router = createBrowserRouter([
         element : <Timeline frineData={frineData} />
       },
       {
+        path: "/stats",
+        element: <StatsPage frineData={frineData} />
+      },
+      {
         path: '/friend/:id',
-        element: <FriendDetails frineData={frineData} />
+        element:       <div><ScrollToTop /> <FriendDetails frineData={frineData} /></div>
       }
     ],
     errorElement : <h2>404 Not Found</h2>
@@ -32,6 +39,9 @@ const router = createBrowserRouter([
   ]);
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <FriendContextProvider>
+  
+      <RouterProvider router={router} />
+    </FriendContextProvider>
   </StrictMode>,
 )

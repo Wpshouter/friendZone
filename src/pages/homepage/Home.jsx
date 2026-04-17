@@ -9,7 +9,7 @@ const Home = ({frineData}) => {
     
     //console.log(frieds, "friend data");
     return (
-        <div>
+        <div className='p-5'>
             <h1 className='text-5xl font-bold text-gray-800 text-center mt-20 my-5'>Friends to keep close in your life</h1>
             <p className='text-slate-500 text-center my-6'>Your personal shelf of meaningful connections. Browse, tend, and nurture the<br></br>
 relationships that matter most.</p>

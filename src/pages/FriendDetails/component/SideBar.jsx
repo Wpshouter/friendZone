@@ -4,7 +4,7 @@ import { MdDeleteOutline, MdOutlineNotificationsActive } from 'react-icons/md';
 const SideBar = ({friend}) => {
     return (
         <div>
-               <div className='border border-gray-200 shadow-md  text-center bg-white text-center p-5'>
+               <div className='border border-gray-200 shadow-md  text-center bg-white text-center p-5 rounded-xl'>
             <p className=''><img src={friend.picture} alt={friend.name} className="max-w-[100px] mx-auto rounded-full mb-2" /></p>
                               <p className='text-gray-800 font-bold text-xl'>{friend.name}</p>
                               <p className='text-slate-600 my-2'>62d ago</p>

@@ -1,15 +1,18 @@
 
 import React from 'react';
-import { Link } from 'react-router';
+import { IoHomeOutline } from 'react-icons/io5';
+import { Link, NavLink } from 'react-router';
+import { RiTimeLine } from "react-icons/ri";
+import { ImStatsDots } from "react-icons/im";
 
 const Navbar = () => {
   const links = <>
-                <li><Link to={"/"}>Home</Link></li>
-                 <li><Link to={"/timeline"} >TimeLine</Link></li>
-                   <li><Link to={"/stats"}  >Stats</Link></li>
+                <li><NavLink className={({ isActive }) => (isActive ? "bg-emerald-900 btn text-white lg:btn-primary justify-start" : "")} to={"/"}><IoHomeOutline className='text-md'/> Home</NavLink></li>
+                 <li><NavLink className={({ isActive }) => (isActive ? "bg-emerald-900 btn text-white lg:btn-primary justify-start" : "")} to={"/timeline"} ><RiTimeLine className='text-md' /> TimeLine</NavLink></li>
+                   <li><NavLink className={({ isActive }) => (isActive ? "bg-emerald-900 btn text-white lg:btn-primary justify-start" : "")} to={"/stats"}  ><ImStatsDots className='text-md' /> Stats</NavLink></li>
                 </>
     return (
-        <div className="navbar bg-base-100 shadow-sm px-15">
+        <div className="navbar bg-base-100 shadow-sm px-5 lg:px-15">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -17,16 +20,16 @@ const Navbar = () => {
       </div>
       <ul
         tabIndex="-1"
-        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow gap-4 text-left">
              {links}
       </ul>
     </div>
-    <a className="text-xl"><img src="/assets/logo.png" /></a>
+    <Link to="/" className="text-xl"><img src="/assets/logo.png" /></Link>
   </div>
   <div className="navbar-center hidden lg:flex">
   </div>
   <div className="navbar-end">
-    <ul className="menu menu-horizontal px-1">
+    <ul className="menu menu-horizontal px-1 items-center gap-5 hidden lg:flex">
      {links}
     </ul>
     {/* <a className="btn">Button</a> */}
