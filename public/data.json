@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Aisha Rahman",
+    "picture": "https://randomuser.me/api/portraits/women/12.jpg",
+    "email": "aisha.rahman@example.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["college", "close friend"],
+    "bio": "Met during freshman year at Dhaka University. We bonded over late-night study sessions and cricket matches.",
+    "goal": 14,
+    "next_due_date": "2025-07-22"
+  },
+  {
+    "id": 2,
+    "name": "David Kim",
+    "picture": "https://randomuser.me/api/portraits/men/45.jpg",
+    "email": "david.kim@example.com",
+    "days_since_contact": 10,
+    "status": "almost due",
+    "tags": ["startup", "tech"],
+    "bio": "Collaborated on a Shopify app project. Loves discussing new SaaS ideas and exploring food spots.",
+    "goal": 14,
+    "next_due_date": "2025-07-20"
+  },
+  {
+    "id": 3,
+    "name": "Sophia Martinez",
+    "picture": "https://randomuser.me/api/portraits/women/33.jpg",
+    "email": "sophia.martinez@example.com",
+    "days_since_contact": 7,
+    "status": "on-track",
+    "tags": ["family friend", "travel"],
+    "bio": "Family friend from Spain. We often share travel stories and plan trips together.",
+    "goal": 14,
+    "next_due_date": "2025-07-27"
+  },
+  {
+    "id": 4,
+    "name": "Arjun Patel",
+    "picture": "https://randomuser.me/api/portraits/men/67.jpg",
+    "email": "arjun.patel@example.com",
+    "days_since_contact": 15,
+    "status": "overdue",
+    "tags": ["business", "mentor"],
+    "bio": "Met through Upwork. He mentored me on freelancing strategies and client communication.",
+    "goal": 14,
+    "next_due_date": "2025-07-21"
+  },
+  {
+    "id": 5,
+    "name": "Emily Chen",
+    "picture": "https://randomuser.me/api/portraits/women/21.jpg",
+    "email": "emily.chen@example.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["college", "music"],
+    "bio": "We played guitar together in the university music club. Still share playlists and jam sessions online.",
+    "goal": 14,
+    "next_due_date": "2025-07-29"
+  },
+  {
+    "id": 6,
+    "name": "Mohammad Ali",
+    "picture": "https://randomuser.me/api/portraits/men/14.jpg",
+    "email": "mohammad.ali@example.com",
+    "days_since_contact": 13,
+    "status": "almost due",
+    "tags": ["neighborhood", "sports"],
+    "bio": "Neighbor from Jashore. We play football together on weekends.",
+    "goal": 14,
+    "next_due_date": "2025-07-23"
+  },
+  {
+    "id": 7,
+    "name": "Laura Becker",
+    "picture": "https://randomuser.me/api/portraits/women/56.jpg",
+    "email": "laura.becker@example.com",
+    "days_since_contact": 20,
+    "status": "overdue",
+    "tags": ["travel", "online friend"],
+    "bio": "Met on a WordPress forum. We exchange ideas about plugins and share travel photography.",
+    "goal": 14,
+    "next_due_date": "2025-07-19"
+  },
+  {
+    "id": 8,
+    "name": "Carlos Rivera",
+    "picture": "https://randomuser.me/api/portraits/men/72.jpg",
+    "email": "carlos.rivera@example.com",
+    "days_since_contact": 8,
+    "status": "on-track",
+    "tags": ["work", "design"],
+    "bio": "Collaborated on a Wix project. Passionate about UI/UX design and minimalistic layouts.",
+    "goal": 14,
+    "next_due_date": "2025-07-26"
+  }
+]
