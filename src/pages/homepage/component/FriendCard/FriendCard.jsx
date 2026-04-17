@@ -20,13 +20,13 @@ const FriendCard = ({ frineData }) => {
         //     Days since contact: {friend.days_since_contact} | Status: {friend.status}
         //   </p>
         // </div>
-           <div className='border border-gray-200 shadow-md py-10 PX-3 text-center bg-white'>
+           <div key={friend.id} className='border border-gray-200 shadow-md py-10 PX-3 text-center bg-white cursor-pointer'>
                   <p className=''><img src={friend.picture} alt={friend.name} className="max-w-[100px] mx-auto rounded-full mb-2" /></p>
                   <p className='text-gray-800 font-bold text-xl'>{friend.name}</p>
                   <p className='text-slate-600 my-2'>62d ago</p>
                   {
-                    friend.tags.map(tag => (
-                      <div className="badge badge-success mx-2">{tag}</div>
+                    friend.tags.map((tag, indx) => (
+                      <div key={indx} className="badge badge-success mx-2">{tag}</div>
                     ))
                   }
                   <br></br>

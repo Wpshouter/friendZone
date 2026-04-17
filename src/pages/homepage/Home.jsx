@@ -3,9 +3,9 @@ import { GoPlus } from 'react-icons/go';
 import Stats from './component/Stats/Stats';
 import FriendCard from './component/FriendCard/FriendCard';
 
-const frineData = fetch('/data.json').then( res => res.json());
+//const frineData = fetch('/data.json').then( res => res.json());
 
-const Home = () => {
+const Home = ({frineData}) => {
     
     //console.log(frieds, "friend data");
     return (

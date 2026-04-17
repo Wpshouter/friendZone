@@ -21,7 +21,7 @@ const Navbar = () => {
              {links}
       </ul>
     </div>
-    <a className="text-xl"><img src="assets/logo.png" /></a>
+    <a className="text-xl"><img src="/assets/logo.png" /></a>
   </div>
   <div className="navbar-center hidden lg:flex">
   </div>

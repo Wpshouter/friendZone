@@ -7,7 +7,7 @@
     "days_since_contact": 18,
     "status": "overdue",
     "tags": ["college", "close friend"],
-    "bio": "Met during freshman year at Dhaka University. We bonded over late-night study sessions and cricket matches.",
+    "bio": "Met during freshman year at Dhaka University.",
     "goal": 14,
     "next_due_date": "2025-07-22"
   },
@@ -19,7 +19,7 @@
     "days_since_contact": 10,
     "status": "almost due",
     "tags": ["startup", "tech"],
-    "bio": "Collaborated on a Shopify app project. Loves discussing new SaaS ideas and exploring food spots.",
+    "bio": "Collaborated on a Shopify app project.",
     "goal": 14,
     "next_due_date": "2025-07-20"
   },
@@ -31,7 +31,7 @@
     "days_since_contact": 7,
     "status": "on-track",
     "tags": ["family friend", "travel"],
-    "bio": "Family friend from Spain. We often share travel stories and plan trips together.",
+    "bio": "Family friend from Spain.",
     "goal": 14,
     "next_due_date": "2025-07-27"
   },
@@ -43,7 +43,7 @@
     "days_since_contact": 15,
     "status": "overdue",
     "tags": ["business", "mentor"],
-    "bio": "Met through Upwork. He mentored me on freelancing strategies and client communication.",
+    "bio": "Met through Upwork.",
     "goal": 14,
     "next_due_date": "2025-07-21"
   },
@@ -55,7 +55,7 @@
     "days_since_contact": 5,
     "status": "on-track",
     "tags": ["college", "music"],
-    "bio": "We played guitar together in the university music club. Still share playlists and jam sessions online.",
+    "bio": "We played guitar together",
     "goal": 14,
     "next_due_date": "2025-07-29"
   },
@@ -67,7 +67,7 @@
     "days_since_contact": 13,
     "status": "almost due",
     "tags": ["neighborhood", "sports"],
-    "bio": "Neighbor from Jashore. We play football together on weekends.",
+    "bio": "We play badminton together on weekends.",
     "goal": 14,
     "next_due_date": "2025-07-23"
   },
@@ -79,7 +79,7 @@
     "days_since_contact": 20,
     "status": "overdue",
     "tags": ["travel", "online friend"],
-    "bio": "Met on a WordPress forum. We exchange ideas about plugins and share travel photography.",
+    "bio": "Met on a WordPress forum.",
     "goal": 14,
     "next_due_date": "2025-07-19"
   },
@@ -91,7 +91,7 @@
     "days_since_contact": 8,
     "status": "on-track",
     "tags": ["work", "design"],
-    "bio": "Collaborated on a Wix project. Passionate about UI/UX design and minimalistic layouts.",
+    "bio": "Collaborated on a Wix project.",
     "goal": 14,
     "next_due_date": "2025-07-26"
   }
