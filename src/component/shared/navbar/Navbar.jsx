@@ -7,9 +7,9 @@ import { ImStatsDots } from "react-icons/im";
 
 const Navbar = () => {
   const links = <>
-                <li><NavLink className={({ isActive }) => (isActive ? "bg-emerald-900 btn text-white lg:btn-primary justify-start" : "")} to={"/"}><IoHomeOutline className='text-md'/> Home</NavLink></li>
-                 <li><NavLink className={({ isActive }) => (isActive ? "bg-emerald-900 btn text-white lg:btn-primary justify-start" : "")} to={"/timeline"} ><RiTimeLine className='text-md' /> TimeLine</NavLink></li>
-                   <li><NavLink className={({ isActive }) => (isActive ? "bg-emerald-900 btn text-white lg:btn-primary justify-start" : "")} to={"/stats"}  ><ImStatsDots className='text-md' /> Stats</NavLink></li>
+                <li><NavLink className={({ isActive }) => (isActive ? "bg-emerald-900 btn text-white lg:btn-primary justify-start " : "hover:bg-emerald-700 ")} to={"/"}><IoHomeOutline className='text-md'/> Home</NavLink></li>
+                 <li><NavLink className={({ isActive }) => (isActive ? "bg-emerald-900 btn text-white lg:btn-primary justify-start" : "hover:bg-emerald-700 ")} to={"/timeline"} ><RiTimeLine className='text-md' /> TimeLine</NavLink></li>
+                   <li><NavLink className={({ isActive }) => (isActive ? "bg-emerald-900 btn text-white lg:btn-primary justify-start" : "hover:bg-emerald-700 ")} to={"/stats"}  ><ImStatsDots className='text-md' /> Stats</NavLink></li>
                 </>
     return (
         <div className="navbar bg-base-100 shadow-sm px-5 lg:px-15">

@@ -9,6 +9,7 @@ import FriendDetails from './pages/FriendDetails/FriendDetails.jsx'
 import FriendContextProvider from './context/FriendContext.jsx'
 import ScrollToTop from './component/shared/ScroolToTop/ScroolToTop.jsx'
 import StatsPage from './pages/Stats/StatsPage.jsx'
+import NotFoundPage from './pages/ErrorPage.jsx'
 
 const frineData = fetch('/data.json').then( res => res.json());
 
@@ -34,7 +35,7 @@ const router = createBrowserRouter([
         element:       <div><ScrollToTop /> <FriendDetails frineData={frineData} /></div>
       }
     ],
-    errorElement : <h2>404 Not Found</h2>
+    errorElement : <NotFoundPage/>
   }
   ]);
 createRoot(document.getElementById('root')).render(
