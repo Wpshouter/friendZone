@@ -4,7 +4,7 @@ import { FaSquareXTwitter } from 'react-icons/fa6';
 
 const Footert = () => {
     return (
-       <footer className="footer footer-horizontal footer-center bg-[#244d3f] text-primary-content p-10">
+       <footer className="footer footer-horizontal footer-center bg-[#244d3f] text-primary-content p-10 pb-5">
   <aside className='container mx-auto'>
     <img className="max-w-[90%] mx-auto mt-15" src="/assets/logo-xl.png" />
     <p className='text-white opacity-80 my-3'>Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.</p>
@@ -23,7 +23,7 @@ const Footert = () => {
   </aside>
   <div className='container mx-auto'>  
        <div className="w-full h-px bg-white opacity-5"></div>
-        <div className='w-full block md:flex justify-between'>
+        <div className='w-full block md:flex justify-between pt-3'>
               <p className='text-white opacity-80 '>Copyright © {new Date().getFullYear()} KeenKeeper. All right reserved</p>
               <nav>
                 <ul className='flex gap-3 justify-center'>
